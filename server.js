@@ -29,10 +29,10 @@ app.get('/about',(req,res)=>{
     res.send('About Us');
 });
 
-app.get('/profile/:commentId/:Id',(req,res)=>{
+app.get('/tanish/:commentId/:Id',(req,res)=>{
     console.log(req.params);
     const {commentId,Id}=req.params;
-    res.send(`Comment ID: ${req.params.commentId} and ID: ${req.params.Id}`);
+    res.send(`Comment ID: +${commentId}+ +${Id}+`);
 });
 
 app.listen(3000,()=>{
